@@ -1,0 +1,11 @@
+<div>
+  <%= simple_form_for [@restaurant, @review] do |form| %>
+  <p><%= form.input :content %></p>
+  <br>
+  <p><%= form.label :rating %></p>
+  <%= form.select :rating, [[0,0],[1,1],[2,2],[3,3],[4,4],[5,5]] %>
+  <br>
+  <br>
+  <%= form.submit "Submit", class: "btn btn-primary" %>
+  <% end %>
+</div>

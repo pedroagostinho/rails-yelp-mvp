@@ -1,0 +1,18 @@
+<div>
+  <%= form_for @restaurant do |form| %>
+  <p><%= form.label :name %></p>
+  <%= form.text_field :name %>
+  <br>
+  <p><%= form.label :address %></p>
+  <%= form.text_field :address %>
+  <br>
+  <p><%= form.label :phone_number %></p>
+  <%= form.text_field :phone_number %>
+  <br>
+  <p><%= form.label :category %></p>
+  <%= form.select :category, [['Chinese','chinese'],['Italian','italian'],['Japanese','japanese'],['French','french'],['Belgian','belgian']] %>
+  <br>
+  <br>
+  <%= form.submit "Submit", class: "btn btn-primary" %>
+  <% end %>
+</div>
