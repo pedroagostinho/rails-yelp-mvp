@@ -2,8 +2,8 @@
 <h3><%= @restaurant.category.capitalize %></h3>
 
 <ul>
-  <li> <%= @restaurant.address %> </li>
-  <li> <%= @restaurant.phone_number %> </li>
+  <li> Address: <%= @restaurant.address %> </li>
+  <li> Phone number: <%= @restaurant.phone_number %> </li>
 </ul>
 <%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
 <br>
